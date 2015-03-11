@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   #!# get 'about', :to => 'pages#about'
   root :to => 'pages#index'
 
-  %w[about contact cv].each do |page|
+  %w[about index].each do |page|
     get page, controller: 'pages', action: page
   end
   # The priority is based upon order of creation: first created -> highest priority.
