@@ -16,5 +16,6 @@
 !/log/.keep
 /tmp
 
-# Ignore config/secrets.yml.
-config/secrets.yml
+#!# Ignore config/secrets.yml.
+#!# I can't deploy to Heroku if the config/secrets.yml file is in the .gitignore 
+#!# config/secrets.yml
