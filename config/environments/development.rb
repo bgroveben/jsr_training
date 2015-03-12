@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  #!# Set the secret key using the environment variable instead of looking for it in secrets.yml.
+  config.secret_key_base = ENV["RAILS_DEVELOPMENT"]
 end
