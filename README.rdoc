@@ -3,9 +3,9 @@
 This app is the training app from the book 'Jump Start Rails' by Andy Hawthorne.
 Copyright 2013 SitePoint Pty. Ltd. ISBN 978-0-9874674-3-0
 
-pp 52 Refining the Layout
+pp 53 Some Notes about the Rails Asset Pipeline
 
 Notes:
 * In the book, when test_unit is invoked using the rails g controller pages command, files for test/functional/pages_controller_test.rb and test/unit/helpers/pages_helper_test.rb are created. This is different from Rails 4.2, where neither one of those files was generated. Figure it out.
 * After unsuccessfully trying to switch to Rails 4.0.13, I now have a test/helpers/pages_helper_test.rb file. Let's see what happens.
-* The layout looks a bit funky because the book uses Bootstrap v2 and I'm using Bootstrap v3. I'll play around with that later (maybe).
+* The layout looks ugly because I'm playing around with Bootstrap. Just ripping off custom templates got boring.

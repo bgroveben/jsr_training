@@ -8,31 +8,31 @@
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <a class="brand">Jump Start Rails JSR Training</a>
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand"><h3>Jump Start Rails JSR Training</h3></a>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span3">
-        <ul class="nav nav-list">
-          <li class="nav-header">Sidebar</li>
-          <li class="active"><a href="#">Link</a></li>
-          <li class="nav-header">Sidebar</li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li class="nav-header">Sidebar</li>
-          <li><a href="#">Link</a></li>
-        </ul>
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="row">
+        <div class="md-col-8">
+          <%= yield %>
+        </div>
       </div>
-      <div class="span9">
-        <%= yield %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="md-col-4">
+        <%= render "/shared/menu" %>
       </div>
     </div>
     <hr/>
-    <footer></footer>
+    <footer class="footer">
+      <p>Andy Hawthorne wrote the book, but Ben Grove built this site. Ben needs to work on his Bootstrap skills.</p>
+    </footer>
   </div>
 
 </body>
