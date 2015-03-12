@@ -3,7 +3,7 @@
 This app is the training app from the book 'Jump Start Rails' by Andy Hawthorne.
 Copyright 2013 SitePoint Pty. Ltd. ISBN 978-0-9874674-3-0
 
-pp 44 Something to Watch Out For 
+pp 48 Functional Tests 
 
 Notes:
 * In the book, when test_unit is invoked using the rails g controller pages command, files for test/functional/pages_controller_test.rb and test/unit/helpers/pages_helper_test.rb are created. This is different from Rails 4.2, where neither one of those files was generated. Figure it out.
