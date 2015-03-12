@@ -19,8 +19,8 @@ class PostTest < ActiveSupport::TestCase
                     blurb: posts(:one).blurb,
                     body: "Body? Whose?")
 
-    assert post[:blurb].kind_of? String
-#!# Actual text from book below threw a NameError; blurb was an undefined local variable or method. 
+    assert post.blurb.kind_of? String
+#!# Actual text from book below threw a NameError; blurb was an undefined local variable or method.
 #!# assert blurb.title.kind_of? String
   end
 
