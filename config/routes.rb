@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :posts
+  resources :pages
 
   #!# get 'pages/index'
   #!# get 'pages/about'
   #!# get 'about', :to => 'pages#about'
+  
   root :to => 'pages#index'
 
   %w[about index].each do |page|
