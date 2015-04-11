@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def index
-    @notice = "This came from the pages controller"
+    @pages = Page.all
   end
 
   def about
