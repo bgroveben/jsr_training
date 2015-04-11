@@ -1,11 +1,21 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
+  def new
+    @page = Page.new
+  end
+
   def index
     @notice = "This came from the pages controller"
   end
 
   def about
+  end
+
+  def create
+    @page = Page.new(page_params)
+    @page.save
+    redirect_to action: :show, id: @page.id
   end
 
   private
